@@ -1,4 +1,4 @@
-from settings import db_location
+from .settings import db_location
 try:
     import sqlite3
 except ImportError:
