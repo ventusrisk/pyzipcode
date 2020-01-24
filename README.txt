@@ -40,3 +40,12 @@ Get a list of zipcodes around a radius of a zipcode
 	>>> zcdb = ZipCodeDatabase()
 	>>> [z.zip for z in zcdb.get_zipcodes_around_radius('54901', 10)]
 	[u'54901', u'54902', u'54903', u'54904', u'54906', u'54927', u'54952', u'54956', u'54957', u'54979', u'54985']
+
+Adding new zipcode
+============
+
+1) Search for zipcode information here: https://www.zip-codes.com/zip-code/34637/zip-code-34637.asp
+
+2) Connect to database via `sqlite3 zipcodes.db`
+
+3) `INSERT INTO ZipCodes values("<zip>", "<city>", "<state>", <float(longt)>, <float(lat)>, <timezone>, <dst>)`
