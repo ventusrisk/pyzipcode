@@ -1,7 +1,8 @@
 from setuptools import setup, find_packages
-import sys, os
+import sys
+import os
 
-version = '1.8'
+version = '1.9'
 
 try:
     import sqlite3
@@ -13,8 +14,9 @@ else:
 setup(name='pyzipcode',
       version=version,
       description="query zip codes and location data",
-      long_description=open("README.txt").read() + '\n\n' + open('CHANGES.txt').read(),
-      classifiers=[], # Get strings from http://pypi.python.org/pypi?%3Aaction=list_classifiers
+      long_description=open("README.txt").read() +
+      '\n\n' + open('CHANGES.txt').read(),
+      classifiers=[],  # Get strings from http://pypi.python.org/pypi?%3Aaction=list_classifiers
       keywords='zip code distance',
       author='Nathan Van Gheem',
       author_email='vangheem@gmail.com',
