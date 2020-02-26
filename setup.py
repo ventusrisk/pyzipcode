@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 import sys
 import os
 
-version = '1.9'
+version = '2.0'
 
 try:
     import sqlite3
