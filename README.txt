@@ -49,3 +49,7 @@ Adding new zipcode
 2) Connect to database via `sqlite3 zipcodes.db`
 
 3) `INSERT INTO ZipCodes values("<zip>", "<city>", "<state>", <float(longt)>, <float(lat)>, <timezone>, <dst>)`
+
+OR 
+
+run python add_zip.py and follow the steps.
